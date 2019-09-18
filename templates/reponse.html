@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../static/style2.css">
+    <title>HTML5</title>
+</head>
+<body>
+    <p>Vous avez choisi l'algorithme</p>
+    <br>
+    <h1>{{reponse}}</h1>
+    <br>
+    <p>Votre réponse encodée donne</p>
+    <br>
+    <h1>
+        {% if reponse == 'md5' %}
+            [ aucun résultat ]
+        {% elif reponse == 'sha1' %}
+            [ aucun résultat ]
+        {% elif reponse == 'sha224' %}
+            [ aucun résultat ]
+        {% elif reponse == 'sha256' %}
+            password
+        {% elif reponse == 'sha384' %}
+            [ aucun résultat ]
+        {% elif reponse == 'sha512' %}
+            [ aucun résultat ]
+        {% else %}
+            [ erreur ]
+        {% endif %}
+    </h1>
+    <br>
+    <p>Cela </p>
+    <h1>
+        {% if reponse == 'md5' %}
+            ne correspond pas
+        {% elif reponse == 'sha1' %}
+            ne correspond pas
+        {% elif reponse == 'sha224' %}
+            ne correspond pas
+        {% elif reponse == 'sha256' %}
+            correspond
+        {% elif reponse == 'sha384' %}
+            ne correspond pas
+        {% elif reponse == 'sha512' %}
+            ne correspond pas
+        {% else %}
+            [ erreur ]
+        {% endif %}
+    </h1>
+    <p>avec le code à deviner</p>
+    <br>
+    <a href="http://localhost:5000/">Essayer à nouveau</a>
+    <img src="../static/licorne.png" alt="Licorne">
+</body>
+</html>

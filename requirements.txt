@@ -1,0 +1,30 @@
+README
+Alissa Bonnel
+BONA25589603
+
+Requis:
+- Python 3
+- Flask
+
+
+INSTALLER FLASK SUR WINDOWS:
+En ligne de commande: pip install flask
+
+LANCER L'APPLICATION mon_projet.py:
+- En ligne de commande, se rendre ou est localise le fichier mon_projet.py
+- En ligne de commande:
+
+	POUR WINDOWS:
+		set FLASK_APP=mon_projet.py
+		set FLASK_ENV=development
+		flask run
+
+	POUR LINUX ET MAC:
+		export FLASK_APP=mon_projet.py
+		export FLASK_ENV=development
+		flask run
+
+- Le message suivant devrait apparaitre: * Running on http://999.9.9.9:5000/ (Press CTRL+C to quit)
+- Se rendre a cette adresse (http://999.9.9.9:5000/) avec un navigateur. Attention a laisser la
+	commande flask run ouverte pour que l'application s'affiche.
+- Le fichier mon_projet.py devrait s'executer.

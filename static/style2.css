@@ -1,0 +1,25 @@
+﻿body {
+    background-color: mediumpurple;
+}
+
+h1 {
+    color: purple;
+}
+
+p {
+    color: black;
+    font-weight: bold;
+    font-size: 160%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: hotpink;
+    font-size: 70px;
+    text-align: center;
+}
